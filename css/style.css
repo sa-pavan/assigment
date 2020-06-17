@@ -1,0 +1,204 @@
+
+
+    html {
+      font-size: 16px;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .wrapper {
+      width: 960px;
+      margin: 0 auto;
+    }
+    .content {
+      width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      background-color: #efefef;
+    }
+    .controls {
+      width: 240px;
+      text-align: center;
+    }
+    .controls button {
+      width: 80%;
+    }
+    .info {
+      font-style: italic;
+    }
+    .align-center {
+      text-align: center;
+    }
+    .item {
+      font-size: 3rem;
+      color: #fff;
+      text-align: center;
+      padding: 33%;
+    }
+    .item1 {
+      background-color: darkgoldenrod;
+    }
+    .item2 {
+      background-color: tomato;
+    }
+    .item3 {
+      background-color: cornflowerblue;
+    }
+    .item4 {
+      background-color: violet;
+    }
+    .item5 {
+      background-color: royalblue;
+    }
+    .item6 {
+      background-color: lightpink;
+    }
+    .item7 {
+      background-color: burlywood;
+    }
+    .item8 {
+      background-color: darkgrey;
+    }
+    .item9 {
+      background-color: yellowgreen;
+    }
+
+    .btn {
+      position: relative;
+      width: auto;
+      display: inline-block;
+      color: #ecf0f1;
+      border-radius: 5px;
+      border: solid 1px #72c6ec;
+      background: #4eb1d8;
+      text-align: center;
+      text-decoration: none;
+      padding: 14px 16px;
+      margin: 12px 0;
+      outline: none;
+      -webkit-box-shadow: 0px 4px 0px #1d90c5;
+      -moz-box-shadow: 0px 4px 0px #1d90c5;
+      box-shadow: 0px 4px 0px #1d90c5;
+      -webkit-transition: all 0.1s;
+      -moz-transition: all 0.1s;
+      transition: all 0.1s;
+    }
+
+    .btn:active {
+      -webkit-box-shadow: 0px 2px 0px #1d90c5;
+      -moz-box-shadow: 0px 2px 0px #1d90c5;
+      box-shadow: 0px 2px 0px #1d90c5;
+      position: relative;
+      top: 4px;
+    }
+    .container {
+      display: grid;
+      width: 720px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 13rem 13rem 13rem;
+    }
+
+
+    .titleBar {
+        width: 100%;
+        background-color:#2E454E;
+        color: #fff;
+        padding: 20px 0;
+        display: none;
+    }
+    .disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        pointer-events: none;
+  
+    }
+
+
+    @media (max-width: 375px) {
+      /* Styles */
+      .wrapper {
+        width: 100%;
+      }
+      .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+      }
+      .controls {
+        width: 100%;
+      }
+      .controls .btn {
+        width: 35%;
+      }
+      .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+      .item {
+        padding: 0;
+        color: #000;
+        position: relative;
+      }
+      .item {
+      font-size: 1rem;
+      padding: 20px;
+      margin-bottom: 2px;
+    }
+    #grid .container .item  {
+      background-color #FEFEFE!important;
+    }
+    .titleBar {
+        display:block;
+    }
+
+    div[class*=item].item {
+        background-color: #FEFEFE;
+    }
+
+    .item::before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: red;
+        left: 0;
+        top: 0;
+        height: 59px;
+    }
+
+
+    .item1::before {
+      background-color: darkgoldenrod;
+    }
+    .item2::before  {
+      background-color: tomato;
+    }
+    .item3::before  {
+      background-color: cornflowerblue;
+    }
+    .item4::before  {
+      background-color: violet;
+    }
+    .item5::before  {
+      background-color: royalblue;
+    }
+    .item6::before  {
+      background-color: lightpink;
+    }
+    .item7::before  {
+      background-color: burlywood;
+    }
+    .item8::before  {
+      background-color: darkgrey;
+    }
+    .item9::before {
+      background-color: yellowgreen;
+    }
+
+    }
+ 
